@@ -1,0 +1,9 @@
+# Editor and IDE files
+.history
+.vscode
+
+# Kiro AI configuration
+.kiro
+
+# Operating system files
+.DS_Store
