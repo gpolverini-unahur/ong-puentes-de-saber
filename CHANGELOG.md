@@ -35,6 +35,11 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 ### Eliminado
 
 ### Corregido
+- Movido `<nav>` dentro del `<header>` en index.html y nosotros.html para estructura semántica correcta
+- Actualizado copyright a 2026 en index.html
+- Estandarizado footer de index.html con email, teléfono y redes sociales
+- Eliminado email duplicado en footer de nosotros.html
+- Agregado `rel="noopener noreferrer"` en enlaces externos con `target="_blank"`
 
 ### Seguridad
 
