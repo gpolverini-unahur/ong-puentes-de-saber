@@ -5,96 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descubrí nuestros programas: Alfabetización Digital Básica, Talleres de Programación y Ciudadanía Digital Responsable para niños y jóvenes.">
     <link rel="icon" href="./img/logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/styles.css">
     <title>Programas - Puentes de Saber</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="./img/logo.png" alt="Logo de Puentes de Saber - Organización que conecta estudiantes universitarios con niños y jóvenes" width="200" height="200">
-        <h1>Puentes de Saber</h1>
-        <p>Conectando estudiantes universitarios con niños y jóvenes para reducir la brecha digital</p>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="./img/logo.png" alt="Logo Puentes de Saber" width="50" height="50" class="me-2">
+                <span class="fw-bold">Puentes de Saber</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./programas.html">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main>
-        <section id="programas">
-            <h2>Nuestros Programas</h2>
-            <p>Conocé las iniciativas que llevamos adelante para reducir la <em>brecha digital</em>.</p>
-            
-            <article>
-                <h3>Alfabetización Digital Básica</h3>
-                <p>
-                    Enseñanza de <strong>fundamentos informáticos</strong>: uso de computadoras, navegación en internet,
-                    procesadores de texto, hojas de cálculo y herramientas de presentación.
-                    Dirigido a niños y jóvenes de <strong>8 a 16 años sin experiencia previa.</strong>
-                </p>
-                <p>
-                    Las clases se desarrollan de manera <strong>práctica y participativa</strong>, utilizando computadoras
-                    del espacio <strong>comunitario</strong> y recursos digitales interactivos. Se trabaja en grupos reducidos
-                    para garantizar el acompañamiento personalizado de cada participante.
-                </p>
-                <ul>
-                    <li>Uso básico de PC y sistema operativo</li>
-                    <li>Navegación segura en internet</li>
-                    <li>Microsoft Word / Google Docs</li>
-                    <li>Introducción a Excel / hojas de cálculo</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Talleres de Programación</h3>
-                <p>
-                    Introducción a la <strong>programación</strong> mediante plataformas visuales como <em>Scratch</em> y <em>Code.org</em>,
-                    y lenguajes como <em>Python</em>. Se trabaja lógica computacional y resolución de problemas.
-                    Para jóvenes de <strong>12 a 18 años</strong>.
-                </p>
-                <p>
-                    Se aplican metodologías de aprendizaje basadas en <strong>proyectos</strong>, donde los participantes
-                    desarrollan juegos, animaciones y pequeños programas. Se fomenta el pensamiento crítico,
-                    la creatividad y el trabajo en equipo.
-                </p>
-                <ul>
-                    <li>Scratch y Code.org (nivel inicial)</li>
-                    <li>Python básico</li>
-                    <li>Lógica y algoritmos</li>
-                    <li>Creación de proyectos propios</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Ciudadanía Digital Responsable</h3>
-                <p>
-                    Talleres sobre <strong>uso responsable de internet</strong>, redes sociales, privacidad, noticias falsas,
-                    <em>ciberbullying</em> y <em>Huella Digital</em>. Incluye sesiones con familias. 
-                </p>
-                <p>
-                    Se promueve el uso consciente y responsable de la tecnología a través de <strong>actividades
-                    dinámicas, debates y casos reales</strong>. También se brindan herramientas para que padres
-                    y tutores puedan acompañar a los jóvenes en el entorno digital.
-                </p>
-                <ul>
-                    <li>Seguridad y privacidad online</li>
-                    <li>Detección de fake news</li>
-                    <li>Prevención del ciberbullying</li>
-                    <li>Uso saludable de redes sociales</li>
-                </ul>
-            </article>
+        <section id="programas" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-3 display-5">Nuestros Programas</h2>
+                <p class="text-center lead mb-5">Conocé las iniciativas que llevamos adelante para reducir la <em>brecha digital</em>.</p>
+                
+                <div class="row g-4">
+                    <!-- Programa 1: Alfabetización Digital Básica -->
+                    <div class="col-lg-4 d-flex">
+                        <div class="card w-100 shadow-sm border-0">
+                            <div class="card-header bg-primary text-white">
+                                <h3 class="card-title mb-0">Alfabetización Digital Básica</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Enseñanza de <strong>fundamentos informáticos</strong>: uso de computadoras, navegación en internet,
+                                    procesadores de texto, hojas de cálculo y herramientas de presentación.
+                                    Dirigido a niños y jóvenes de <strong>8 a 16 años sin experiencia previa.</strong>
+                                </p>
+                                <p class="card-text">
+                                    Las clases se desarrollan de manera <strong>práctica y participativa</strong>, utilizando computadoras
+                                    del espacio <strong>comunitario</strong> y recursos digitales interactivos. Se trabaja en grupos reducidos
+                                    para garantizar el acompañamiento personalizado de cada participante.
+                                </p>
+                                <h5 class="mt-4 mb-3">Contenidos:</h5>
+                                <ul class="list-unstyled">
+                                    <li><span class="badge bg-secondary me-2">✓</span>Uso básico de PC y sistema operativo</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Navegación segura en internet</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Microsoft Word / Google Docs</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Introducción a Excel / hojas de cálculo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programa 2: Talleres de Programación -->
+                    <div class="col-lg-4 d-flex">
+                        <div class="card w-100 shadow-sm border-0">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="card-title mb-0">Talleres de Programación</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Introducción a la <strong>programación</strong> mediante plataformas visuales como <em>Scratch</em> y <em>Code.org</em>,
+                                    y lenguajes como <em>Python</em>. Se trabaja lógica computacional y resolución de problemas.
+                                    Para jóvenes de <strong>12 a 18 años</strong>.
+                                </p>
+                                <p class="card-text">
+                                    Se aplican metodologías de aprendizaje basadas en <strong>proyectos</strong>, donde los participantes
+                                    desarrollan juegos, animaciones y pequeños programas. Se fomenta el pensamiento crítico,
+                                    la creatividad y el trabajo en equipo.
+                                </p>
+                                <h5 class="mt-4 mb-3">Contenidos:</h5>
+                                <ul class="list-unstyled">
+                                    <li><span class="badge bg-secondary me-2">✓</span>Scratch y Code.org (nivel inicial)</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Python básico</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Lógica y algoritmos</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Creación de proyectos propios</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programa 3: Ciudadanía Digital Responsable -->
+                    <div class="col-lg-4 d-flex">
+                        <div class="card w-100 shadow-sm border-0">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="card-title mb-0">Ciudadanía Digital Responsable</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Talleres sobre <strong>uso responsable de internet</strong>, redes sociales, privacidad, noticias falsas,
+                                    <em>ciberbullying</em> y <em>Huella Digital</em>. Incluye sesiones con familias.
+                                </p>
+                                <p class="card-text">
+                                    Se promueve el uso consciente y responsable de la tecnología a través de <strong>actividades
+                                    dinámicas, debates y casos reales</strong>. También se brindan herramientas para que padres
+                                    y tutores puedan acompañar a los jóvenes en el entorno digital.
+                                </p>
+                                <h5 class="mt-4 mb-3">Contenidos:</h5>
+                                <ul class="list-unstyled">
+                                    <li><span class="badge bg-secondary me-2">✓</span>Seguridad y privacidad online</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Detección de fake news</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Prevención del ciberbullying</li>
+                                    <li><span class="badge bg-secondary me-2">✓</span>Uso saludable de redes sociales</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>
-            <a href="./contacto.html">Contacto</a> | 
-            <a href="https://facebook.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestra página de Facebook">Facebook</a> | 
-            <a href="https://instagram.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestro perfil de Instagram">Instagram</a> | 
-            <a href="https://twitter.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestro perfil de Twitter">Twitter</a>
-        </p>
-        <p>&copy; 2026 Puentes de Saber. Todos los derechos reservados.</p>
+    <!-- Footer -->
+    <footer class="text-white">
+        <div class="container">
+            <div class="footer-social">
+                <h5>Síguenos en Redes Sociales</h5>
+                <div class="social-links">
+                    <a href="https://facebook.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://instagram.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://twitter.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <p class="footer-copyright">&copy; 2026 Puentes de Saber. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
