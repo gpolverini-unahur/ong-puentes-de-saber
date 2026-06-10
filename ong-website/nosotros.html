@@ -1,104 +1,241 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conocé nuestra misión, visión, valores e historia. Puentes de Saber trabaja desde 2018 reduciendo la brecha digital en comunidades vulnerables.">
-    <link rel="icon" href="./img/logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Nosotros - Puentes de Saber</title>
-</head>
-<body>
-    <header>
-        <img src="./img/logo.png" alt="Logo Puentes de Saber" width="200" height="200">
-        <h1>Puentes de Saber</h1>
-        <p>Conectando estudiantes universitarios con niños y jóvenes para reducir la brecha digital</p>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="datos-institucionales">
-            <!-- <h2>Nuestro Impacto</h2> -->
-            <dl>
-                <div class="impact-item">
-                    <dt>beneficiarios</dt>
-                    <dd>+500</dd>
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Conocé nuestra misión, visión, valores e historia. Puentes de Saber trabaja desde 2018 reduciendo la brecha digital en comunidades vulnerables.">
+            <link rel="icon" href="./img/logo.png" type="image/png">
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Custom CSS -->
+            <link rel="stylesheet" href="./css/styles.css">
+            <title>Nosotros - Puentes de Saber</title>
+        </head>
+        <body>
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+                <div class="container-fluid">
+                    <div class="navbar-brand d-flex align-items-center">
+                        <img src="./img/logo.png" alt="Logo Puentes de Saber" width="50" height="50" class="me-2">
+                        <span class="fw-bold">Puentes de Saber</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./programas.html">Programas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="impact-item">
-                    <dt>voluntarios activos</dt>
-                    <dd>+80</dd>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero-section text-white py-5">
+                <div class="container text-center">
+                    <img src="./img/logo.png" alt="Logo Puentes de Saber" class="hero-logo mb-4">
+                    <h1 class="hero-title mb-3">Puentes de Saber</h1>
+                    <p class="hero-subtitle">Conectando estudiantes universitarios con niños y jóvenes para reducir la brecha digital</p>
                 </div>
-                <div class="impact-item">
-                    <dt>centros de trabajo</dt>
-                    <dd>15</dd>
+            </section>
+
+            <main>
+
+                <!-- Datos Institucionales -->
+                <section id="datos-institucionales" class="py-5 bg-light">
+                    <div class="container">
+                        <div class="card border-0 bg-transparent shadow-none no-hover">
+                    <div class="card-body p-0 bg-transparent">
+                            <h2 class="text-center mb-5">Nuestro Impacto</h2>
+                        </div>
+                    </div>
+                        <div class="row g-4 text-center">
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body py-4">
+                                        <p class="display-4 fw-bold text-primary mb-1">+500</p>
+                                        <p class="text-muted mb-0">beneficiarios</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body py-4">
+                                        <p class="display-4 fw-bold text-primary mb-1">+80</p>
+                                        <p class="text-muted mb-0">voluntarios activos</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body py-4">
+                                        <p class="display-4 fw-bold text-primary mb-1">15</p>
+                                        <p class="text-muted mb-0">centros de trabajo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Misión y Visión -->
+                <section class="py-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body">
+                                        <h2 class="card-title text-primary mb-3">Nuestra Misión</h2>
+                                        <p class="card-text"><em>Puentes de Saber</em> es una <strong>ONG educativa</strong> que conecta estudiantes 
+                                        universitarios voluntarios con niños y jóvenes de zonas vulnerables, 
+                                        brindándoles acceso a la tecnología, alfabetización digital, 
+                                        talleres de programación, uso responsable de internet y herramientas 
+                                        informáticas básicas para que la brecha digital no sea un 
+                                        obstáculo en su futuro.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body">
+                                        <h2 class="card-title text-primary mb-3">Nuestra Visión</h2>
+                                        <p class="card-text">Ser la organización líder en <strong>inclusión digital</strong> educativa, donde 
+                                        cada niño y joven, sin importar su contexto socioeconómico, tenga 
+                                        las habilidades tecnológicas necesarias para desarrollar su máximo 
+                                        potencial y construir un futuro de oportunidades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Valores -->
+                <section class="py-5 bg-light">
+                    <div class="container">
+                        <h2 class="text-center mb-5">Valores</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 text-primary">Inclusión</h3>
+                                        <p class="card-text">Creemos que todos merecen acceso equitativo a la educación tecnológica</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 text-primary">Colaboración</h3>
+                                        <p class="card-text">Trabajamos en conjunto con estudiantes universitarios, comunidades y familias</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 text-primary">Empoderamiento</h3>
+                                        <p class="card-text">Brindamos herramientas para que los jóvenes sean protagonistas de su propio aprendizaje</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 text-primary">Innovación</h3>
+                                        <p class="card-text">Utilizamos metodologías pedagógicas actualizadas y adaptadas a cada contexto</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 text-primary">Compromiso social</h3>
+                                        <p class="card-text">Nos dedicamos a reducir la brecha digital y crear oportunidades reales</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Historia -->
+                <section class="py-5">
+                    <div class="container">
+                        <h2 class="text-center mb-5">Historia</h2>
+                        <div class="row g-4">
+                            <div class="col-lg-8 mx-auto">
+                                <p class="lead text-center mb-5">Fundada en 2018 por un grupo de estudiantes de Ingeniería en Sistemas
+                                de la <strong>Universidad Nacional de Hurlingham (UNAHUR)</strong>, Puentes de Saber 
+                                nació de la necesidad observada en barrios cercanos donde muchos 
+                                niños no tenían acceso a computadoras ni conocimientos digitales básicos.
+                                Desde entonces, hemos capacitado a más de <strong>500 niños y jóvenes</strong>, trabajado 
+                                con <strong>15 escuelas y centros comunitarios</strong>, y contamos con una red de más de <strong>80 
+                                voluntarios universitarios</strong> activos.</p>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm card-impacto">
+                                    <div class="card-body p-4">
+                                        <h2 class="card-title h5">Nuestro Impacto</h2>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">✓ Más de <strong>500 niños y jóvenes</strong> capacitados</li>
+                                            <li class="mb-2">✓ <strong>15 escuelas y centros comunitarios</strong></li>
+                                            <li>✓ Más de <strong>80 voluntarios universitarios</strong> activos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm card-equipo">
+                                    <div class="card-body p-4">
+                                        <h2 class="card-title h5">Equipo</h2>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">✓ <strong>Coordinación General:</strong> Estudiantes y graduados de UNAHUR</li>
+                                            <li class="mb-2">✓ <strong>Voluntarios Docentes:</strong> Estudiantes universitarios de carreras tecnológicas</li>
+                                            <li class="mb-2">✓ <strong>Alianzas Institucionales:</strong> Escuelas, bibliotecas populares y centros comunitarios</li>
+                                            <li>✓ <strong>Apoyo Técnico:</strong> Donaciones de equipamiento y conectividad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="text-white">
+                <div class="container">
+                    <div class="footer-social">
+                        <h5>Síguenos en Redes Sociales</h5>
+                        <div class="social-links">
+                            <a href="https://facebook.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestra página de Facebook (se abre en nueva ventana)">Facebook</a>
+                            <a href="https://instagram.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Instagram (se abre en nueva ventana)">Instagram</a>
+                            <a href="https://twitter.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Twitter (se abre en nueva ventana)">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <p class="footer-copyright">&copy; 2026 Puentes de Saber. Todos los derechos reservados.</p>
+                    </div>
                 </div>
-            </dl>
-        </section>
+            </footer>
 
-        <section>
-            <h2>Nuestra Misión</h2>
-            <p><em>Puentes de Saber</em> es una <strong>ONG educativa</strong> que conecta estudiantes 
-            universitarios voluntarios con niños y jóvenes de zonas vulnerables, 
-            brindándoles acceso a la tecnología, alfabetización digital, 
-            talleres de programación, uso responsable de internet y herramientas 
-            informáticas básicas para que la brecha digital no sea un 
-            obstáculo en su futuro.</p>
-        </section>
-
-        <section>
-            <h2>Nuestra Visión</h2>
-            <p>Ser la organización líder en <strong>inclusión digital</strong> educativa, donde 
-            cada niño y joven, sin importar su contexto socioeconómico, tenga 
-            las habilidades tecnológicas necesarias para desarrollar su máximo 
-            potencial y construir un futuro de oportunidades.</p>
-        </section>
-
-        <section>
-            <h2>Valores</h2>
-            <ul>
-                <li><strong>Inclusión:</strong> Creemos que todos merecen acceso equitativo a la educación tecnológica</li>
-                <li><strong>Colaboración:</strong> Trabajamos en conjunto con estudiantes universitarios, comunidades y familias</li>
-                <li><strong>Empoderamiento:</strong> Brindamos herramientas para que los jóvenes sean protagonistas de su propio aprendizaje</li>
-                <li><strong>Innovación:</strong> Utilizamos metodologías pedagógicas actualizadas y adaptadas a cada contexto</li>
-                <li><strong>Compromiso social:</strong> Nos dedicamos a reducir la brecha digital y crear oportunidades reales</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Historia</h2>
-            <p>Fundada en 2018 por un grupo de estudiantes de Ingeniería en Sistemas
-            de la <strong>Universidad Nacional de Hurlingham (UNAHUR)</strong>, Puentes de Saber 
-            nació de la necesidad observada en barrios cercanos donde muchos 
-            niños no tenían acceso a computadoras ni conocimientos digitales básicos.
-            Desde entonces, hemos capacitado a más de <strong>500 niños y jóvenes</strong>, trabajado 
-            con <strong>15 escuelas y centros comunitarios</strong>, y contamos con una red de más de <strong>80 
-            voluntarios universitarios</strong> activos.</p>
-        </section>
-
-        <section>
-            <h2>Equipo</h2>
-            <ul>
-                <li><strong>Coordinación General:</strong> Estudiantes y graduados de UNAHUR</li>
-                <li><strong>Voluntarios Docentes:</strong> Estudiantes universitarios de carreras tecnológicas</li>
-                <li><strong>Alianzas Institucionales:</strong> Escuelas, bibliotecas populares y centros comunitarios</li>
-                <li><strong>Apoyo Técnico:</strong> Donaciones de equipamiento y conectividad</li>
-            </ul>
-        </section>
-
-        <footer>
-        <p>
-            <a href="./contacto.html">Contacto</a> | 
-            <a href="https://facebook.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestra página de Facebook (se abre en nueva ventana)">Facebook</a> | 
-            <a href="https://instagram.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Instagram (se abre en nueva ventana)">Instagram</a> | 
-            <a href="https://twitter.com/puentesdesaber" target="_blank" rel="noopener noreferrer" aria-label="Visitar nuestro perfil de Twitter (se abre en nueva ventana)">Twitter</a>
-        </p>
-        <p>&copy; 2026 Puentes de Saber. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>
