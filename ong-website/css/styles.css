@@ -647,3 +647,27 @@ html {
 a {
     transition: all 0.3s ease;
 }
+
+/* Cards de Historia */
+.card-impacto {
+    background-color: var(--primary-color);
+}
+
+.card-equipo {
+    background-color: #27AE60;  /* verde más oscuro */
+}
+
+.card-impacto .card-body,
+.card-equipo .card-body {
+    background-color: transparent;
+}
+
+.card-impacto .card-body *,
+.card-equipo .card-body * {
+    color: white !important;
+}
+
+.no-hover:hover {
+    transform: none;
+    box-shadow: none !important;
+}
