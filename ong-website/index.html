@@ -5,54 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Puentes de Saber - ONG educativa que conecta estudiantes universitarios con niños y jóvenes para reducir la brecha digital mediante alfabetización digital y programación.">
     <link rel="icon" href="./img/logo.png" type="image/png">
-    <link rel="stylesheet" href="./css/styles.css">
     <title>Inicio - Puentes de Saber</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="./img/logo.png" alt="Logo Puentes de Saber" width="200" height="200">
-        <h1>Puentes de Saber</h1>
-        <p>Conectando estudiantes universitarios con niños y jóvenes para reducir la brecha digital</p>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="./img/logo.png" alt="Logo Puentes de Saber" width="50" height="50" class="me-2">
+                <span class="fw-bold">Puentes de Saber</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./programas.html">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-5">
+        <div class="container text-center">
+            <img src="./img/logo.png" alt="Logo Puentes de Saber" class="hero-logo mb-4">
+            <h1 class="hero-title mb-3">Puentes de Saber</h1>
+            <p class="hero-subtitle">Conectando estudiantes universitarios con niños y jóvenes para reducir la brecha digital</p>
+        </div>
+    </section>
     <main>
-        <section>
-            <h2>Nuestra Misión</h2>
-            <p>Puentes de Saber es una ONG educativa que conecta <strong>estudiantes universitarios voluntarios</strong> con niños y jóvenes de zonas vulnerables, brindándoles acceso a la <strong>tecnología</strong>, alfabetización digital, talleres de programación, uso responsable de internet y herramientas informáticas básicas — para que la <strong>brecha digital</strong> no sea un obstáculo en su futuro.</p>
+        <!-- Misión y Visión -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h2 class="card-title text-primary mb-3">Nuestra Misión</h2>
+                                <p class="card-text">Puentes de Saber es una ONG educativa que conecta <strong>estudiantes universitarios voluntarios</strong> con niños y jóvenes de zonas vulnerables, brindándoles acceso a la <strong>tecnología</strong>, alfabetización digital, talleres de programación, uso responsable de internet y herramientas informáticas básicas — para que la <strong>brecha digital</strong> no sea un obstáculo en su futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <h2 class="card-title text-primary mb-3">Nuestra Visión</h2>
+                                <p class="card-text">Ser la organización líder en <em>inclusión digital educativa</em>, donde cada niño y joven, sin importar su contexto socioeconómico, tenga las habilidades tecnológicas necesarias para desarrollar su máximo potencial y construir un futuro de oportunidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Nuestra Visión</h2>
-            <p>Ser la organización líder en <em>inclusión digital educativa</em>, donde cada niño y joven, sin importar su contexto socioeconómico, tenga las habilidades tecnológicas necesarias para desarrollar su máximo potencial y construir un futuro de oportunidades.</p>
-        </section>
-
-        <section>
-            <h2>Nuestros Programas</h2>
-            <p>Ofrecemos tres programas principales diseñados para reducir la brecha digital y empoderar a niños y jóvenes:</p>
-            <ul>
-                <li>Alfabetización Digital Básica</li>
-                <li>Talleres de Programación</li>
-                <li>Ciudadanía Digital Responsable</li>
-            </ul>
-            <p><a href="./programas.html#programas">Ver detalles de todos nuestros programas</a></p>
+        <!-- Programas -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 display-5">Nuestros Programas</h2>
+                <p class="text-center mb-4 lead">Ofrecemos tres programas principales diseñados para reducir la brecha digital y empoderar a niños y jóvenes:</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body">
+                                <h3 class="card-title">Alfabetización Digital Básica</h3>
+                                <p class="card-text">Aprende los fundamentos de la informática y el uso de herramientas digitales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body">
+                                <h3 class="card-title">Talleres de Programación</h3>
+                                <p class="card-text">Desarrolla habilidades en programación y pensamiento computacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0 text-center">
+                            <div class="card-body">
+                                <h3 class="card-title">Ciudadanía Digital Responsable</h3>
+                                <p class="card-text">Aprende a usar internet de forma segura y responsable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="./programas.html#programas" class="btn btn-primary btn-lg">Ver detalles de todos nuestros programas</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>
-            <a href="./contacto.html">Contacto</a> | 
-            <a href="https://facebook.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Síguenos en Facebook</a> | 
-            <a href="https://instagram.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Síguenos en Instagram</a> | 
-            <a href="https://twitter.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Síguenos en Twitter</a>
-        </p>
-        <p>&copy; 2026 Puentes de Saber. Todos los derechos reservados.</p>
+    <!-- Footer -->
+    <footer class="text-white">
+        <div class="container">
+            <div class="footer-social">
+                <h5>Síguenos en Redes Sociales</h5>
+                <div class="social-links">
+                    <a href="https://facebook.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://instagram.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://twitter.com/puentesdesaber" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <p class="footer-copyright">&copy; 2026 Puentes de Saber. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
