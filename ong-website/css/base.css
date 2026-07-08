@@ -1,0 +1,39 @@
+/* ============================================
+   ESTILOS BASE Y RESET
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    padding-top: 70px; /* Espacio para compensar el navbar fijo */
+}
+
+/* Scroll behavior suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tipografía */
+.display-4,
+.display-5,
+.display-6 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Transiciones suaves globales */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+a {
+    transition: all 0.3s ease;
+}
