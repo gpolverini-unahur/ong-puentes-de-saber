@@ -1,0 +1,13 @@
+/* ============================================
+   VARIABLES CSS
+   Colores: Azul (#0D5BA8), Verde (#2ECC71), Naranja (#FF9500)
+   ============================================ */
+
+:root {
+    --primary-color: #0D5BA8;      /* Azul principal */
+    --secondary-color: #2ECC71;    /* Verde */
+    --accent-color: #FF9500;       /* Naranja */
+    --dark-color: #1A1A1A;         /* Casi negro */
+    --light-color: #F8F9FA;        /* Gris claro */
+    --text-color: #333333;         /* Gris oscuro para texto */
+}

@@ -1,0 +1,156 @@
+/* ============================================
+   LAYOUT
+   Secciones, Footer y estructura general
+   ============================================ */
+
+/* ============================================
+   SECCIONES
+   ============================================ */
+
+section {
+    padding: 3rem 0;
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+section.text-center h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+section.bg-light {
+    background-color: var(--light-color);
+}
+
+/* Cajas de impacto */
+.bg-primary.text-white,
+.bg-success.text-white {
+    padding: 2rem;
+    border-radius: 0.75rem;
+}
+
+.bg-primary.text-white h3,
+.bg-success.text-white h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.bg-primary.text-white ul,
+.bg-success.text-white ul {
+    padding-left: 0;
+}
+
+.bg-primary.text-white li,
+.bg-success.text-white li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0A4A8F 100%) !important;
+}
+
+.bg-success {
+    background-color: var(--secondary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-success {
+    color: var(--secondary-color) !important;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+footer {
+    background: linear-gradient(135deg, #0D3B6F 0%, #1A1A1A 100%);
+    color: white;
+    margin-top: 5rem;
+    border-top: 4px solid var(--accent-color);
+    padding: 2rem 0 1rem 0 !important;
+}
+
+footer h5 {
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 149, 0, 0.3);
+    color: white;
+}
+
+footer .footer-content {
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .footer-copyright {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+footer .footer-social {
+    text-align: center;
+    flex: 1;
+    padding-bottom: 1rem;
+}
