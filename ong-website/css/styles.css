@@ -765,3 +765,104 @@ html.dark-mode .navbar {
 html.dark-mode .text-muted {
     color: #9E9E9E !important;
 }
+/* ============================================
+   SEARCH BAR
+   ============================================ */
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 0.6rem 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(255, 149, 0, 0.2);
+}
+
+#searchResults {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.search-result-item {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.5rem;
+}
+
+.search-result-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.search-result-preview {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.search-result-page {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+
+/* Responsive search bar */
+@media (max-width: 768px) {
+    .search-input {
+        min-width: 150px;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    #searchResults {
+        max-height: 300px;
+        min-width: 250px;
+    }
+}
