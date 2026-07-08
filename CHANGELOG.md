@@ -19,6 +19,22 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ### Seguridad
 
+## [1.0.2] - 2026-07-08
+
+### Agregado
+- Meta tags Open Graph personalizados en las 4 páginas HTML:
+  - `og:type`, `og:url`, `og:title`, `og:description`, `og:image` específicos por página
+  - Mejora la visualización al compartir en Facebook, LinkedIn y WhatsApp
+- Meta tags Twitter Cards en las 4 páginas HTML:
+  - `twitter:card`, `twitter:url`, `twitter:title`, `twitter:description`, `twitter:image`
+- Imagen destacada `index.png` en sección "Nuestros Programas" de `index.html`
+  - Layout consistente con otras páginas (ancho completo, bordes redondeados, sombra)
+  - Mejora el impacto visual de la página principal
+
+### Cambiado
+- Descripciones Open Graph personalizadas para cada página según su contenido específico
+- URLs absolutas en meta tags para correcta visualización en redes sociales
+
 ## [1.0.1] - 2026-07-08
 
 ### Agregado
@@ -139,7 +155,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ### Seguridad
 
-[Unreleased]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/releases/tag/v0.1.0
