@@ -1,0 +1,219 @@
+/* ============================================
+   UTILITIES
+   Modo oscuro, Responsive, Animaciones y Utilidades
+   ============================================ */
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================
+   MODO OSCURO
+   ============================================ */
+
+/* Fondo general y texto base */
+html.dark-mode .hero-section {
+    background: #121212;
+}
+
+html.dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+    --text-color: #E0E0E0;
+    --light-color: #1E1E1E;
+}
+
+/* Secciones con fondo blanco */
+html.dark-mode section {
+    background-color: #121212;
+}
+
+html.dark-mode section.bg-light {
+    background-color: #1A1A1A !important;
+}
+
+/* Cards */
+html.dark-mode .card,
+html.dark-mode .card-body {
+    background-color: #1E1E1E !important;
+    color: #E0E0E0;
+}
+
+html.dark-mode .card-title {
+    color: #90CAF9;
+}
+
+html.dark-mode .card-text {
+    color: #BDBDBD;
+}
+
+/* Títulos de secciones */
+html.dark-mode section h2,
+html.dark-mode section h3,
+html.dark-mode .display-4,
+html.dark-mode .display-5,
+html.dark-mode .display-6 {
+    color: #90CAF9;
+}
+
+/* Texto general */
+html.dark-mode p,
+html.dark-mode .lead {
+    color: #BDBDBD;
+}
+
+/* Botón primario */
+html.dark-mode .btn-primary {
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+}
+
+/* Footer (ya es oscuro, solo ajustar un poco) */
+html.dark-mode footer {
+    background: linear-gradient(135deg, #0A0A0A 0%, #111111 100%);
+}
+
+html.dark-mode .navbar {
+    background: #1A1A1A !important;
+}
+
+html.dark-mode .text-muted {
+    color: #9E9E9E !important;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .hero-logo {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    section h2::after {
+        width: 40px;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-group .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    .d-grid {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .d-grid .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .search-input {
+        min-width: 150px;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    #searchResults {
+        max-height: 300px;
+        min-width: 250px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 576px) {
+    .navbar .nav-link {
+        margin: 0.5rem 0;
+        font-size: 0.85rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* ============================================
+   UTILIDADES ADICIONALES
+   ============================================ */
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow {
+    box-shadow: 0 1rem 3rem rgba(13, 91, 168, 0.15) !important;
+}
+
+/* Espaciado personalizado */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+/* Ronda de bordes personalizada */
+.rounded {
+    border-radius: 0.75rem !important;
+}
