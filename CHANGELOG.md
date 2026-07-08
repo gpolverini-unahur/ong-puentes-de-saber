@@ -19,6 +19,25 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ### Seguridad
 
+## [1.0.1] - 2026-07-08
+
+### Agregado
+- Imágenes institucionales en `nosotros.html`:
+  - `img/nosotros-actividades-ong.png` en sección "Nuestro Impacto" con layout profesional (imagen destacada arriba, cards de estadísticas abajo)
+  - `img/nosotros-equipo-voluntarios.png` a ancho completo en sección "Historia"
+- Imágenes ilustrativas en cards de programas en `programas.html`:
+  - `img/programas-ninos-computadoras.png` en card "Alfabetización Digital Básica"
+  - `img/programas-taller-programacion.png` en card "Talleres de Programación"
+  - `img/programas-ciudadania-digital.png` en card "Ciudadanía Digital Responsable"
+- Atributos `alt` descriptivos en todas las imágenes nuevas para accesibilidad
+
+### Cambiado
+- Layout de sección "Nuestro Impacto" en `nosotros.html` para mejor jerarquía visual (imagen destacada arriba, estadísticas abajo)
+- Footer simplificado en `contacto.html` (eliminada sección de redes sociales para evitar duplicación con contenido principal)
+
+### Eliminado
+- Duplicación de enlaces de redes sociales en footer de `contacto.html` (mantenidos solo en cards principales)
+
 ## [1.0.0] - 2026-07-08
 
 ### Agregado
@@ -120,6 +139,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ### Seguridad
 
-[Unreleased]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/gpolverini-unahur/ong-puentes-de-saber/releases/tag/v0.1.0
